@@ -43,7 +43,7 @@ server ENV['STAGING_SERVER'], user: ENV['STAGING_USERNAME'], roles: %w{app, web}
 # Global options
 # --------------
  set :ssh_options, {
-   keys: %w(ENV['STAGING_SSH_KEY']),
+   keys: [ENV['STAGING_SSH_KEY']],
    forward_agent: true,
    auth_methods: %w(publickey)
  }
