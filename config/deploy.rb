@@ -5,7 +5,7 @@ set :application, ENV['APP_NAME']
 set :repo_url, ENV['GIT_REPO_URL']
 
 # Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/app
 # set :deploy_to, "/var/www/app"
