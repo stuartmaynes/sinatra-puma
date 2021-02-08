@@ -11,3 +11,5 @@ gem "capistrano", "~> 3.15"
 gem "capistrano-bundler", "~> 2.0"
 
 gem "capistrano-env-config", "~> 0.3.0"
+
+gem "capistrano-rbenv", "~> 2.2"
